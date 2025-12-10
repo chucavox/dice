@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Pig: AI Dice Battle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap');
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .font-mono {
+        font-family: 'JetBrains Mono', monospace;
+      }
+      /* Custom Dice Animations */
+      @keyframes roll {
+        0% { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+        100% { transform: rotateX(720deg) rotateY(720deg) rotateZ(720deg); }
+      }
+      .rolling {
+        animation: roll 0.6s ease-in-out infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.32.0",
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react": "https://esm.sh/react@^19.2.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-950 text-white overflow-hidden">
+    <div id="root"></div>
+  </body>
+</html>
